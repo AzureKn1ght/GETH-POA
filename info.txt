@@ -7,3 +7,11 @@ passcode - password
 bootnode enode: 
 enode://fc929dec06832f07adb0665e03a3431ea0341c2680d63b9a78f06ffbcd5c5f2e486d21dd6bb9e20babbe8b4cc2b9861e317af50eebac2cc802252cc2d1c3fbfe@127.0.0.1:0?discport=30301
 
+
+
+Node 1: 
+geth --networkid 14333 --datadir "./data" --bootnodes enode://fc929dec06832f07adb0665e03a3431ea0341c2680d63b9a78f06ffbcd5c5f2e486d21dd6bb9e20babbe8b4cc2b9861e317af50eebac2cc802252cc2d1c3fbfe@127.0.0.1:0?discport=30301 --port 30304 --ipcdisable --syncmode full --allow-insecure-unlock --unlock 0x906bEd7423910BF4D22128Ced235357C3223B9f1 --password password.txt --mine console
+
+
+Node 2:
+geth --networkid 14333 --datadir "./data" --bootnodes enode://fc929dec06832f07adb0665e03a3431ea0341c2680d63b9a78f06ffbcd5c5f2e486d21dd6bb9e20babbe8b4cc2b9861e317af50eebac2cc802252cc2d1c3fbfe@127.0.0.1:0?discport=30301 --port 30304 --ipcdisable --syncmode full --allow-insecure-unlock --unlock 0x04c051335aD87343D601a6cdD4aF1ACC4aA71bCC --password password.txt console
