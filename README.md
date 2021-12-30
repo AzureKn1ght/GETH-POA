@@ -1,6 +1,9 @@
 # GETH-POA
 
-Just trying out setting up a POA Ethereum Blockchain
+**Q: Deploy your own private blockchain using geth and deploy smart contracts on it.**
+
+Level: Medium 
+   
 
 # Screen Captures
 
